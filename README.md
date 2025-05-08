@@ -1,13 +1,13 @@
 
-# code-reason-tuned-llama-3.1-8b
+# gemma2-2B-thinking-reasoning-model-V1
 
-Fine-tuned LoRA adapter for Meta's LLaMA 3.1 8B model, designed to integrate coding and reasoning tasks.
+LoRA fine-tuned version of Google's Gemma 2B model, enhanced for lightweight logical reasoning tasks.
 
 ---
 
 ## Model Information
  
-- **Fine-Tuned Model**: `navaneeth45/code-reason-tuned-llama-3.1-8b`  
+- **Fine-Tuned Model**: `navaneeth45/gemma2-2B-thinking-reasoning-model-V1`  
 - **Library**: `transformers`
 
 ---
@@ -23,16 +23,16 @@ Fine-tuned LoRA adapter for Meta's LLaMA 3.1 8B model, designed to integrate cod
 
 ## Overview
 
-- **LoRA Adapter**: Injects additional parameters to enhance the model’s reasoning through code.
-- **Training Focus**: Mixed dataset of reasoning questions and coding problems in a 1:1 ratio.
-- **Motivation**: Research shows that when models are trained to reason, their coding performance also improves significantly.
-- **Use Case**: Ideal for tasks involving logic-driven code understanding, explanation, and debugging.
+- **LoRA Adapter**: Injects reasoning capacity into a compact, efficient 2B parameter model.
+- **Training Data**: Blend of reasoning-based questions and structured prompts from reasoning-heavy tasks (ServiceNow, math problems, etc.).
+- **Goal**: Offer reasoning capability in scenarios with limited computational resources.
+- **Performance**: Provides accurate, concise step-by-step answers while maintaining efficiency.
 
 ---
 
 ## Training Procedure
 
-Supervised fine-tuning (SFT) with LoRA adapters on a hybrid dataset combining reasoning and programming problems.
+Supervised fine-tuning (SFT) using the LoRA method for reasoning adaptability in small-scale deployments.
 
 ### Framework Versions
 

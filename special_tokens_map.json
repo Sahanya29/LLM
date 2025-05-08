@@ -1,17 +1,36 @@
 {
+  "additional_special_tokens": [
+    "<think>",
+    "</think>",
+    "<pad>",
+    "<eos>"
+  ],
   "bos_token": {
-    "content": "<|begin_of_text|>",
+    "content": "<bos>",
     "lstrip": false,
     "normalized": false,
     "rstrip": false,
     "single_word": false
   },
   "eos_token": {
-    "content": "<|end_of_text|>",
+    "content": "<eos>",
     "lstrip": false,
     "normalized": false,
     "rstrip": false,
     "single_word": false
   },
-  "pad_token": "<|end_of_text|>"
+  "pad_token": {
+    "content": "<pad>",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  "unk_token": {
+    "content": "<unk>",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  }
 }
