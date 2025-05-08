@@ -1,22 +1,17 @@
 {
-  "additional_special_tokens": [
-    "<think>",
-    "</think>",
-    "<pad>",
-    "<eos>"
-  ],
-  "eos_token": {
-    "content": "<|im_end|>",
+  "bos_token": {
+    "content": "<|begin_of_text|>",
     "lstrip": false,
     "normalized": false,
     "rstrip": false,
     "single_word": false
   },
-  "pad_token": {
-    "content": "<pad>",
+  "eos_token": {
+    "content": "<|end_of_text|>",
     "lstrip": false,
     "normalized": false,
     "rstrip": false,
     "single_word": false
-  }
+  },
+  "pad_token": "<|end_of_text|>"
 }

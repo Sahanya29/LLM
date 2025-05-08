@@ -1,13 +1,13 @@
 
-# Qwen2.5-1.5B-thinking-reasoning-model-V1
+# code-reason-tuned-llama-3.1-8b
 
-Fine-tuned LoRA adapter for the Qwen2.5 1.5B model to enhance logical reasoning capabilities.
+Fine-tuned LoRA adapter for Meta's LLaMA 3.1 8B model, designed to integrate coding and reasoning tasks.
 
 ---
 
 ## Model Information
-
-- **Fine-Tuned Model**: `navaneeth45/Qwen2.5-1.5B-thinking-reasoning-model-V1`  
+ 
+- **Fine-Tuned Model**: `navaneeth45/code-reason-tuned-llama-3.1-8b`  
 - **Library**: `transformers`
 
 ---
@@ -23,16 +23,16 @@ Fine-tuned LoRA adapter for the Qwen2.5 1.5B model to enhance logical reasoning 
 
 ## Overview
 
-- **LoRA Adapter**: Adds ~8M parameters on top of the base model.  
-- **Training Objective**: Improve multi-step reasoning and logical inference.  
-- **Dataset Type**: Chain-of-thought and domain-specific tasks.  
-- **Result**: Produces more coherent and structured answers with logical steps.
+- **LoRA Adapter**: Injects additional parameters to enhance the model’s reasoning through code.
+- **Training Focus**: Mixed dataset of reasoning questions and coding problems in a 1:1 ratio.
+- **Motivation**: Research shows that when models are trained to reason, their coding performance also improves significantly.
+- **Use Case**: Ideal for tasks involving logic-driven code understanding, explanation, and debugging.
 
 ---
 
 ## Training Procedure
 
-Supervised fine-tuning (SFT) using LoRA.
+Supervised fine-tuning (SFT) with LoRA adapters on a hybrid dataset combining reasoning and programming problems.
 
 ### Framework Versions
 
